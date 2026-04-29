@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment Variables
+.env
+.env.test
+
+# Data and Models
+data/tmp/
+data/raw_librispeech/
+data/clips/
+data/speakers/
+models/checkpoints/*.pt
+!models/checkpoints/.gitkeep
+
+# Outputs and Logs
+*.log
+output_audio*.wav
+response*.json
+*.csv
+!test_reference.csv
+!benchmarking/*.csv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

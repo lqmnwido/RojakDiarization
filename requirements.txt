@@ -1,0 +1,15 @@
+torch>=2.0.0
+torchaudio>=2.0.0
+speechbrain>=0.5.14
+numpy>=1.23.5
+scikit-learn>=1.2.0
+python-dotenv>=1.0.0
+scipy>=1.10.0
+soundfile>=0.12.1
+silero-vad>=1.0.0
+fastapi>=0.100.0
+uvicorn>=0.22.0
+python-multipart>=0.0.6
+pyannote.metrics>=3.2.1
+pyannote.core>=5.0.0
+pandas>=2.0.0

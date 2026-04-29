@@ -1,0 +1,28 @@
+# Experiment Configuration (Reproducible Research)
+# Inspired by pyannote-audio pipeline YAMLs
+
+pipeline:
+  name: "HybridNeuralClassic"
+  params:
+    vad_threshold: 0.35
+    clustering_threshold: 0.85
+    min_speech_duration: 0.4
+    window_len: 1.5
+    hop_len: 0.75
+
+training:
+  dataset: "LibriSpeech-dev-clean"
+  batch_size: 4
+  epochs: 50
+  learning_rate: 1e-4
+  segment_len: 10
+  overlap_probability: 0.5
+
+evaluation:
+  metrics: ["DER", "JER", "Purity", "Coverage"]
+  validation_split: 0.2
+  test_split: 0.1
+  # Best parameters found during validation will be stored here
+  optimized:
+    best_checkpoint: "models/checkpoints/diarizer_epoch_49.pt"
+    best_vad_threshold: 0.35
