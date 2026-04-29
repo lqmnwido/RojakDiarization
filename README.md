@@ -1,5 +1,7 @@
 # RojakDiarization
 
+**Note: This project is currently in Pre-Alpha status.**
+
 RojakDiarization is a robust, hybrid speaker diarization system that combines the power of neural voice activity detection with classic speaker clustering techniques. It is designed for high accuracy and flexibility across various audio conditions.
 
 ## 🚀 Key Features
@@ -74,6 +76,6 @@ Evaluate performance against reference files:
 python benchmarking/evaluate.py --hypothesis response.json --reference test_reference.csv
 ```
 
-## 📄 License
+## ✍️ Author
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+- **Luqman Hafiz**
